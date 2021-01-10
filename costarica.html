@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>Costa Rica</title>
+
+<link HREF="wereldkaart.css" REL="stylesheet" type="text/css">
+</head>
+<body>
+
+<p>
+        <button onclick="document.location='index.html'" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-home"></span> Home
+		  
+		  </button>
+		  </p>
+
+<section>
+<h2>Costa Rica - Louise</h2>
+
+<p>
+In mijn vakantie naar Costa Rica heb ik mega veel speciale dingen meegemaakt. Ik heb bijzondere dieren gezien zoals luiaarden, veel avontuur beleefd zoals wildwaterraften, duiken en zip linen. Ik was 13 jaar en kan me deze vakantie dus ook volledig herinneren. Overal waar we kwamen zeiden de locals 'Pura Vida!' Dit betekent grof: geniet van het leven.
+    </section>
+<br><br>
+
+<section>
+
+<style>
+* {box-sizing: border-box}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="kikker.JPG" style="width:50%" alt="Kikker tijdens night safari in Costa Rica.">
+  <div class="text" > Kikker tijdens night safari.</div>
+                   
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="kano.JPG" style="width:50%" alt="Kanotocht in rivieren van Costa Rica.">
+  <div class="text">Kanotocht.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="zonsondergang.JPG" style="width:50%" alt="Zonsondergang met grote wolken aan de kust van Costa Rica.">
+  <div class="text">Zonsondergang met grote wolken.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br>
+    <section>
+<strong>Info:</strong>
+<br> 
+De Republiek Costa Rica is een land in Centraal-Amerika dat in het noorden door Nicaragua en in het zuiden door Panama wordt begrensd. In het westen en het oosten wordt het respectievelijk begrensd door de Grote Oceaan en de Caraïbische Zee. Costa Rica, dat letterlijk Rijke kust betekent, ontbond zijn leger in 1949.Costa Rica stond in 2010 als 62ste gerangschikt in de index van de menselijke ontwikkeling en in 2019 op de 12e plaats van de World Happiness Report, en is op dat vlak een van de toplanden in Latijns-Amerika.
+<br>
+In 2007 kondigde de Costa Ricaanse regering aan dat het tegen 2021 het eerste klimaatneutrale land van de wereld zal zijn. Costa Rica stond in 2009 en 2012 dan ook als eerste gerangschikt in de Happy Planet Index, die aangeeft hoe gelukkig de mensen zijn op basis van onder andere de ecologische voetafdruk.
+<br>
+De oudste archeologische vondsten in Costa Rica zijn ongeveer 13.000 jaar oud, behorend tot de prehistorische Cloviscultuur. Voor de komst van de Europeanen lag het gebied waar nu Costa Rica ligt in de overgangszone tussen de cultureel-historische regio Meso-Amerika en die van de Andes. Voor het grootste deel stond het gebied onder invloed van de Chibcha-cultuur. De Chorotega waren de dominante bevolkingsgroep in het noordwesten van het land. De Huetares waren een tweede belangrijke bevolkingsgroep. Op archeologisch gebied wordt Costa Rica verdeeld in drie regio's: Groot-Nicoya, Groot-Chiriquí en de Centraal-Caribische regio.
+<br>
+Costa Rica werd in de 16e eeuw door de Spanjaarden onderworpen. Op 15 september 1821 werd het een deel van het onafhankelijke Mexicaanse Rijk, waarvan het zich 2 jaar later met andere Centraal-Amerikaanse landen afscheidde om de Verenigde Staten van Centraal-Amerika te vormen. In 1840 viel deze federatie uit elkaar. In 1899 vonden de eerste werkelijk democratische verkiezingen plaats. Sindsdien is het land twee keer door politiek geweld geplaagd, wat naar de maatstaven van de regio weinig is. Van 1917 tot 1919 regeerde de dictator Federico Tinoco Granados en in 1948 was er een kleine burgeroorlog na een omstreden verkiezingsuitslag. Die oorlog werd gewonnen door de linkse José Figueres Ferrer, die na afloop het leger afschafte en een nieuwe grondwet opstelde. Sindsdien is Costa Rica gevrijwaard gebleven van het geweld dat veel van zijn buurlanden heeft geteisterd. Het is een van de welvarendste landen van Latijns-Amerika geworden en staat daarom ook wel bekend als "het Zwitserland van Centraal-Amerika".
+    </section>
+<br><br>
+
+<div class="a">Bron: <a href="https://nl.wikipedia.org/wiki/Costa_Rica" target="_blank">Wikipedia</a></div>
+
+        
+<br><br>
+     <section>
+        <strong>Top 3 activiteiten:</strong>
+        <br>
+        <ol>
+            <li>La Fortuna Waterfall bekijken.</li>
+            <li>Op safari gaan.</li>
+            <li>Ponderosa Adventure Park bezoeken.</li>
+        </ol>
+            </section> 
+    <br><br>
+
+    <strong>Volkslied:</strong>
+    <br><br>
+<audio controls>
+  <source src="volksliedcostarica.mp3" type="audio/mpeg">
+  
+</audio>
+    
+</p> 
+
+</body>
+</html>

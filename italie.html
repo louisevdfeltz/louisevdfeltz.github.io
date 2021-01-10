@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>Italië</title>
+
+<link HREF="wereldkaart.css" REL="stylesheet" type="text/css">
+</head>
+<body>
+
+<p>
+        <button onclick="document.location='index.html'" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-home"></span> Home
+		  
+		  </button>
+		  </p>
+<section>
+<h2>Italië - Louise</h2>
+
+<p>
+Wanneer iemand aan mij vraagt wat mijn favoriete vakantieland is, dan zeg ik altijd Italië. Dat komt omdat ik houd van de Italiaanse cultuur en warmte. Alle prachtige steden die je in dit land tegenkomt hebben allemaal weer een eigen verhaal. De plekken waar ik heen ben geweest zijn Sicilië, Bologna, Florence (leukste plek tot nu toe), Venetië, Verona en Madonna di Campiglio. De laatste was een skigebied in de Dolomieten.
+    </section>
+<br><br>
+
+ <section>
+
+<style>
+* {box-sizing: border-box}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pontevecchio.JPG" style="width:50%" alt="Ponte Vecchio in Florence.">
+  <div class="text" > Ponte Vecchio in Florence.</div>
+                   
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="standbeeld.JPG" style="width:50%" alt="Standbeeld bij museum.">
+  <div class="text">Standbeeld bij museum.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="kerktoren.JPG" style="width:50%" alt="Kerktoren van Florence.">
+  <div class="text">Kerktoren van Florence.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+
+<br><br>
+    <section>
+<strong>Info:</strong>
+<br> 
+Italië, officieel de Republiek Italië (Italiaans: Repubblica Italiana), is een land in Zuid-Europa. Het noorden van Italië grenst aan Frankrijk, Zwitserland, Oostenrijk en Slovenië. De rest van het land wordt omringd door de Tyrreense, de Middellandse, de Ionische en Adriatische Zee. De eilanden Sicilië, Sardinië en Elba en een aantal kleinere eilanden behoren ook tot Italië.
+<br>
+Een groot deel van het vasteland van Italië is gelegen op het Apennijns Schiereiland en wordt omgeven door water. Vanwege de langgerekte vorm wordt het land ook wel "de laars" genoemd. Op een grondgebied van ruim 300.000 km<sup>2</sup> wonen 62.402.659 (2020) Italianen. De hoofdstad van het land is Rome (Roma). De onafhankelijke staten Vaticaanstad, waarvan de paus het hoofd is,en San Marino zijn twee enclaves binnen de Italiaanse grenzen. Campione d'Italia is dan weer een Italiaanse exclave in Zwitserland.
+<br>
+Italië was in de oudheid het centrum van het Romeinse Rijk, dat uitgroeide tot het grootste rijk van Europa. Later stond in Italië, meer bepaald in de regio Toscane, de wieg van de renaissance. Op 17 maart 1861 vond de Italiaanse eenwording plaats, en sinds de monarchie in 1946 door de bevolking werd weggestemd, is het bestaan van de Repubblica Italiana een feit. Italië is een parlementaire republiek met zowel een president als een premier aan de macht. Het land is op internationaal gebied vertegenwoordigd in organisaties als de Europese Unie, de Verenigde Naties, de NAVO, de WTO en de G8. Italië hoorde in 2005 bij de top tien landen in de Quality of Life Index.
+    </section>
+<br><br>
+
+
+<div class="a">Bron: <a href="https://nl.wikipedia.org/wiki/Itali%C3%AB" target="_blank">Wikipedia</a></div>
+
+        
+<br><br>
+        <section>
+        <strong>Top 3 activiteiten:</strong>
+        <br>
+        <ol>
+            <li>Sint-Pietersbasiliek bezoeken.</li>
+            <li>Dom van Milaan bezoeken.</li>
+            <li>Naar Underground Naples.</li>
+        </ol>
+            </section> 
+    <br><br>
+
+    <strong>Volkslied:</strong>
+    <br><br>
+<audio controls>
+  <source src="volkslieditalie.mp3" type="audio/mpeg">
+  
+</audio>
+    
+</p> 
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+
+<title>Australië</title>
+<link HREF="wereldkaart.css" REL="stylesheet" type="text/css">
+</head>
+<body>
+
+<p>
+        <button onclick="document.location='index.html'" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-home"></span> Home
+		  
+		  </button>
+		  </p>
+
+<section>
+<h2>Australië - Louise</h2>
+
+<p>Ik ben naar Autralië geweest toen ik 3 jaar oud was. Ik kan me er nog maar heel weinig van herinneren, maar ik weet wel dat ik het fantastisch vond! Veel kangoeroes en koala's gezien, Sydney bekeken en avonturen beleefd. Hieronder een aantal foto's.
+    </section>
+<br><br>
+
+
+<style>
+* {box-sizing: border-box}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="vis.JPG" style="width:50%" alt="kleurijke vis in Great Barrier Reef">
+  <div class="text" > Vis tijdens duiken in Great Barrier Reef.</div>
+                   
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="skylinesydney.JPG" style="width:50%" alt="Skyline van Sydney">
+  <div class="text">Skyline van Sydney</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="natuuraustralie.JPG" style="width:50%" alt="Australische bergen en bossen.">
+  <div class="text">Australische bergen en bossen.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br>
+    <section>
+<strong>Info:</strong>
+<br> 
+Australië (Engels: Australia), officieel het Gemenebest van Australië (Engels: Commonwealth of Australia) is een land op het zuidelijk halfrond bestaande uit het Australische vasteland en een groot aantal eilanden in de Indische en Grote Oceaan, waarvan Tasmanië het grootste is. Australië ligt ten noordwesten van Nieuw-Zeeland en ten zuiden van Indonesië, Oost-Timor en Papoea-Nieuw-Guinea. Het land heeft een oppervlakte van 7.692.000 km<sup>2</sup> en is daarmee het op vijf na grootste land ter wereld naar oppervlakte. Van de circa 25 miljoen inwoners woont het grootste deel in en nabij de grote steden, zoals Sydney, Melbourne, Brisbane, Perth en Adelaide. De hoofdstad is Canberra.
+<br>
+Australië, dat zijn naam dankt aan het vermeende continent terra australis incognita ("onbekend zuidelijk land"), werd al enkele tienduizenden jaren bewoond voor het door Europeanen zou worden ingenomen. Nadat Willem Jansz Australië in 1606 opmerkte, duurde het nog tot 1770 voor de oostkust in bezit werd genomen door de Britten, die het eiland in eerste instantie als strafkolonie gebruikten. Van 1650 tot 1817 heette het hele continent Nieuw Holland, alleen de namen Arnhemland, Nieuw-Zeeland en Tasmanië herinneren nu nog aan de Nederlandse ontdekkingsreizen in dit gebied. New South Wales was in 1788 de eerste kolonie en in de 19e eeuw volgden nog vijf andere koloniën, de voorlopers van de huidige Australische staten. Op 1 januari 1901 voegden de zes koloniën zich samen tot één federatie en werd het - hoewel nog niet volledig - onafhankelijk van het Verenigd Koninkrijk. Australië ontleent zijn soevereiniteit aan het zogenoemde settled colony principle dat bepaalt dat het land vreedzaam werd gekoloniseerd.
+<br>
+Het tegenwoordige Australië is een federale parlementaire democratie en een constitutionele monarchie met als staatshoofd koningin Elizabeth II (een Commonwealth realm), vertegenwoordigd in Australië door de Gouverneur-Generaal. Internationaal is Australië lid van de Verenigde Naties, de G20, het Gemenebest van Naties, de OESO en de WTO.
+    </section>
+<br><br>
+
+<div class="a">Bron: <a href="https://nl.wikipedia.org/wiki/Australi%C3%AB_(land)" target="_blank">Wikipedia</a></div>
+
+<br><br>
+     <section>
+        <strong>Top 3 activiteiten:</strong>
+        <br>
+        <ol>
+            <li>Duiken bij Great Barrier Reef.</li>
+            <li>Surfen aan de kusten.</li>
+            <li>Naar de grote steden.</li>
+        </ol>
+            </section> 
+    <br><br>
+
+    <strong>Volkslied:</strong>
+    <br><br>
+<audio controls>
+  <source src="australievolkslied.mp3" type="audio/mpeg">
+  
+</audio>
+    
+    
+</p> 
+
+</body>
+</html>

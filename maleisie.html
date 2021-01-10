@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>Maleisië</title>
+
+<link HREF="wereldkaart.css" REL="stylesheet" type="text/css">
+</head>
+<body>
+
+<p>
+        <button onclick="document.location='index.html'" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-home"></span> Home
+		  
+		  </button>
+		  </p>
+
+<section>
+<h2>Maleisië - Louise</h2>
+
+<p>
+Deze vakantie was misschien wel de leukste die ik ooit heb beleefd. Dat komt omdat dit land zo veel te bieden heeft en ik was toendertijd 10 jaar oud, waardoor ik me alles nog herinner. We hebben gewandeld in de grote bossen, veel dieren gezien, gesnorkeld en nog veel meer.
+    </section>
+<br><br>
+
+ <section>
+
+<style>
+* {box-sizing: border-box}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="kaarsjes.JPG" style="width:50%" alt="Kaarsjes in een tempel.">
+  <div class="text" > Kaarsjes in een tempel.</div>
+                   
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="schildpadden.JPG" style="width:50%" alt="Schildpadden in verzorgingscenter.">
+  <div class="text">Schildpadden in verzorgingscenter.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="huisjes.JPG" style="width:50%" alt="Vakantiehuisjes op een eiland van Maleisië.">
+  <div class="text">Vakantiehuisjes op een eiland van Maleisië.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+
+<br><br>
+    <section>
+<strong>Info:</strong>
+<br> 
+Maleisië is een land in het zuidoosten van Azië. De islam is de grootste religie. Het land grenst aan: Brunei, Indonesië, Singapore en Thailand.
+<br>
+Het schiereiland Malakka ontwikkelde zich als een voornaam Zuidoost-Aziatisch handelscentrum toen de handel tussen China en India door de drukke Straat Malakka toenam. De islam arriveerde in de 14e eeuw, gevolgd door Europese handelslieden in de 16e eeuw, waarna de Portugezen, Nederlanders en Britten achtereenvolgend de Straat Malakka domineerden.
+<br>
+De Britse kroonkolonie van de Straits Settlements werd in 1826 opgericht en in de jaren tot 1867 vergrootten de Britten hun controle over de rest van het schiereiland. Na de Japanse bezetting tijdens Wereldoorlog II groeide het streven naar onafhankelijkheid onder het volk, tezamen met een communistische opstand. Het schiereiland werd in 1957 onafhankelijk onder de naam 'Federatie van Malaya', waar de haven van Singapore geen deel van uitmaakte.
+<br>
+Een nieuwe federatie met de naam Maleisië werd op 16 september 1963 opgericht door het samengaan van Maleisië, Singapore, en de Oost-Maleisische staten Sabah en Sarawak aan de noordkust van Borneo. De vroegere jaren werden gedwarsboomd door pogingen van Indonesië om Maleisië te overheersen, Filipijnse aanspraken op Sabah, en de uiteindelijke afscheiding van Singapore in 1965.
+<br>
+Canada is een federale staat met 10 provincies en 3 territoria en een parlementaire constitutionele monarchie (een Commonwealth realm). Het staatshoofd van Canada is koningin Elizabeth II, die in Canada wordt vertegenwoordigd door de gouverneur-generaal terwijl het hoofd van de regering de premier is. Het is een tweetalig land waar zowel Engels als Frans een officiële status hebben. Canada is lid van het Gemenebest van Naties, APEC, OSA, de VN, de G8, de Francophonie en de NAVO.
+    </section>
+<br><br>
+
+<div class="a">Bron: <a href="https://nl.wikipedia.org/wiki/Maleisi%C3%AB" target="_blank">Wikipedia</a></div>
+        
+<br><br>
+     <section>
+        <strong>Top 3 activiteiten:</strong>
+        <br>
+        <ol>
+            <li>De Petronas Twin Towers bezoeken.</li>
+            <li>Wandeling in de natuur samen met de wilde dieren.</li>
+            <li>Duiken bij een van de prachtige eilanden.</li>
+        </ol>
+            </section> 
+    <br><br>
+
+    <strong>Volkslied:</strong>
+    <br><br>
+<audio controls>
+  <source src="volksliedmaleisie.mp3" type="audio/mpeg">
+  
+</audio>
+
+</p> 
+
+</body>
+</html>
